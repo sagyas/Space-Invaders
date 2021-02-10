@@ -1,0 +1,38 @@
+START_LEVEL
+level_name:first level
+ball_velocities:45,200 -45,200 0,300
+background:image(image1.png)
+paddle_speed:650
+paddle_width:160
+block_definitions:standard_block_definitions.txt
+blocks_start_x:25
+blocks_start_y:80
+row_height:25
+num_blocks:10
+START_BLOCKS
+*
+*
+bbbbbbbbbb
+END_BLOCKS
+END_LEVEL
+
+START_LEVEL
+background:color(red)
+ball_velocities:30,400
+level_name:second level
+paddle_speed:450
+paddle_width:240
+block_definitions:standard_block_definitions.txt
+blocks_start_x:25
+blocks_start_y:80
+row_height:50
+num_blocks:5
+START_BLOCKS
+*
+*
+bbbbaaaaaa
+nnn****nnn
+*
+bbbbbbbbbb
+END_BLOCKS
+END_LEVEL

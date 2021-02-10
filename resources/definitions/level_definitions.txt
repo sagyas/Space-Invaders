@@ -1,0 +1,20 @@
+START_LEVEL
+level_name:Welcome to the Jungle
+ball_velocities:45,500 -45,500 -30,500 30,500
+background:image(background_images/jungle.jpg)
+paddle_speed:650
+paddle_width:160
+block_definitions:definitions/jungle_block_definitions.txt
+blocks_start_x:25
+blocks_start_y:80
+row_height:25
+num_blocks:26
+START_BLOCKS
+-
+-
+-
+-
+-lllllllllllll--
+-zzzzzzzzzzzzz--
+END_BLOCKS
+END_LEVEL

@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: biuoop-1.4.jar
+Main-Class: Ass7Game
+
