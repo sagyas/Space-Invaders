@@ -14,7 +14,8 @@ developed with Java using OOP principles.
 
 ## Usage
 
-Run: `$ make run`
+Run:  
+`$ make run`
 
 ## Screenshots
 
