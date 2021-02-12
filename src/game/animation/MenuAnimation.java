@@ -7,8 +7,11 @@ import game.Menu;
 import game.Selection;
 
 import java.awt.Color;
+import java.awt.Image;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.swing.ImageIcon;
 
 /**
  * The type Menu animation.
@@ -80,16 +83,20 @@ public class MenuAnimation<T> implements Menu<T> {
     public void doOneFrame(DrawSurface d, double dt) {
         d.setColor(Color.CYAN);
         d.fillRectangle(0, 0, d.getWidth(), d.getHeight());
-        int start = 200;
-        int x = 150;
-        d.setColor(Color.BLUE);
+        ImageIcon icon = new ImageIcon("./resources/background_images/menu.png");
+        Image img = icon.getImage();
+        d.drawImage(0, 0, img);
+        int start = 180;
+        int x = 50;
+        d.setColor(Color.WHITE);
         d.drawText(x, start, this.title, 80);
-        start += 100;
-        d.setColor(Color.BLACK);
+        start += 130;
+        x += 130;
+        d.setColor(Color.WHITE);
         for (int i = 0; i < this.list.size(); i++) {
             d.drawText(x, start,
-                    "(" + this.list.get(i).getKey() + ")" + " " + this.list.get(i).getMessage(), 70);
-            start += 100;
+                    "(" + this.list.get(i).getKey() + ")" + " " + this.list.get(i).getMessage(), 55);
+            start += 80;
         }
 
         for (int i = 0; i < this.list.size(); i++) {

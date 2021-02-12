@@ -3,7 +3,7 @@
 The classic Space Invaders game,  
 developed with Java using OOP principles.
 
-![alt text](./assets/gameplay.gif 'Gameplay')
+![alt text](./readme_files/gameplay.gif 'Gameplay')
 
 ## Installation
 
@@ -19,4 +19,4 @@ Run:
 
 ## Screenshots
 
-![alt text](./assets/screenshot.png 'Screenshot')
+![alt text](./readme_files/screenshot.png 'Screenshot')

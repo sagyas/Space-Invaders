@@ -342,12 +342,9 @@ public class LevelSpecificationReader implements LevelInformation {
         Pattern patt1 = Pattern.compile("-*\\d*,\\d*");
         Matcher matcher1 = patt1.matcher(line);
         while (matcher1.find()) {
-            System.out.println(line.substring(matcher1.start(), matcher1.end()));
             Pattern patt2 = Pattern.compile("\\d+|-+\\d+");
             Matcher matcher2 = patt2.matcher(line.substring(matcher1.start(), matcher1.end()));
             while (matcher2.find()) {
-                System.out.println(line.substring(matcher1.start(),
-                        matcher1.end()).substring(matcher2.start(), matcher2.end()));
                 vList.add(Integer.parseInt(line.substring(matcher1.start(),
                         matcher1.end()).substring(matcher2.start(), matcher2.end())));
             }

@@ -102,7 +102,7 @@ public class Ass7Game {
             LivesIndicator lives = new LivesIndicator();
             lives.getCounter().increase(3);
             GameFlow gameLevel = new GameFlow(ks, ar, gui, score, lives, table);
-            Menu<Task<Void>> menu = new MenuAnimation<Task<Void>>("Space Invaders", ks, gui);
+            Menu<Task<Void>> menu = new MenuAnimation<Task<Void>>("SPACE INVADERS", ks, gui);
             // Menu<Task<Void>> subMenu = new MenuAnimation<Task<Void>>("Select Level", ks, gui);
             // menu.addSubMenu("s", "Start Game", subMenu);
             AnimationRunner runner = new AnimationRunner(gui);
@@ -161,8 +161,8 @@ public class Ass7Game {
 
             HighScoresAnimation scores = new HighScoresAnimation(table, ks, "space");
             menu.addSelection("s", "Start Game", newGame);
-            menu.addSelection("h", "Hi scores", new ShowHiScoresTask(runner, scores));
-            menu.addSelection("q", "quit", quit);
+            menu.addSelection("h", "High Scores", new ShowHiScoresTask(runner, scores));
+            menu.addSelection("q", "Quit", quit);
             runner.run(menu);
             // wait for user selection
             Task<Void> task = menu.getStatus();
