@@ -1,7 +1,7 @@
 # Space Invaders
 
 The classic Space Invaders game,  
-developed with Java using OOP principles.
+written in Java using OOP principles.
 
 ![alt text](./readme_files/gameplay.gif 'Gameplay')
 
