@@ -1,4 +1,4 @@
-# Space Invaders
+# Space Invaders in Java
 
 The classic Space Invaders game,  
 written in Java using OOP principles.
